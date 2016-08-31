@@ -70,7 +70,7 @@
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="meterUnfilled" translatesAutoresizingMaskIntoConstraints="NO" id="Eg6-aE-ZnZ">
                                                         <rect key="frame" x="0.0" y="-152" width="152" height="152"/>
                                                     </imageView>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="meterFilled" translatesAutoresizingMaskIntoConstraints="NO" id="aW6-2p-n6R">
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="meterFilled" translatesAutoresizingMaskIntoConstraints="NO" id="aW6-2p-n6R" customClass="ArcImageView">
                                                         <rect key="frame" x="0.0" y="-152" width="152" height="152"/>
                                                     </imageView>
                                                 </subviews>
@@ -303,6 +303,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="imgViewFilled" destination="aW6-2p-n6R" id="Wgg-OH-6aT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
+@interface ArcImageView : UIImageView
+
+- (void)cropArcStartAngle:(CGFloat)start
+                 endAngle:(CGFloat)end;
+
+@end
+
+
 @interface ViewController : UIViewController
 
 
