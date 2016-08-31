@@ -23,7 +23,7 @@
 }
 
 - (void)performAnimation {
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    timer = [NSTimer scheduledTimerWithTimeInterval:2.0
                                              target:self
                                            selector:@selector(showScore)
                                            userInfo:nil

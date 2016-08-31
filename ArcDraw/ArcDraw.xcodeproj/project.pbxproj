@@ -65,13 +65,13 @@
 				A4F2ECAE1D76E601005D0143 /* AppDelegate.m */,
 				A4F2ECB01D76E601005D0143 /* ViewController.h */,
 				A4F2ECB11D76E601005D0143 /* ViewController.m */,
+				A4F2ECC11D7716F2005D0143 /* ArcImageView.h */,
+				A4F2ECC21D7716F2005D0143 /* ArcImageView.m */,
 				A4F2ECB31D76E601005D0143 /* Main.storyboard */,
 				A4F2ECB61D76E601005D0143 /* Assets.xcassets */,
 				A4F2ECB81D76E601005D0143 /* LaunchScreen.storyboard */,
 				A4F2ECBB1D76E601005D0143 /* Info.plist */,
 				A4F2ECAA1D76E601005D0143 /* Supporting Files */,
-				A4F2ECC11D7716F2005D0143 /* ArcImageView.h */,
-				A4F2ECC21D7716F2005D0143 /* ArcImageView.m */,
 			);
 			path = ArcDraw;
 			sourceTree = "<group>";

@@ -53,6 +53,14 @@
 
     self.maskLayer.path = [arc CGPath];
     self.circleLayer.path = [arc CGPath];
+
+    //-- animation is not working
+//    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+//    pathAnimation.duration = 1.0;
+//    pathAnimation.fromValue = @(0.0f);
+//    pathAnimation.toValue = @(1.0f);
+//    [pathAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+//    [self.layer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
 }
 
 @end
