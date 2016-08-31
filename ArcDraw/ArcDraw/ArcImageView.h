@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ArcImageView.h
 //  ArcDraw
 //
 //  Created by Gaurav Sharma on 31/08/16.
@@ -8,5 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController @end
+@interface ArcImageView : UIImageView
 
+- (void)cropStartAngle:(CGFloat)start
+              endAngle:(CGFloat)end;
+
+@end
