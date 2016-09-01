@@ -1,5 +1,5 @@
 # ArcDraw-iOS
-![available](imgs/avail.svg)
+![available](https://cdn.rawgit.com/dayitv89/ArcDraw-iOS/master/imgs/avail.svg)
 
 Autolayout arc draw sample view
 
