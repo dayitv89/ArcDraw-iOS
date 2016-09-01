@@ -14,6 +14,7 @@
 		A4F2ECB71D76E601005D0143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F2ECB61D76E601005D0143 /* Assets.xcassets */; };
 		A4F2ECBA1D76E601005D0143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F2ECB81D76E601005D0143 /* LaunchScreen.storyboard */; };
 		A4F2ECC31D7716F2005D0143 /* ArcImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F2ECC21D7716F2005D0143 /* ArcImageView.m */; };
+		A4F2ECC61D780479005D0143 /* ArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F2ECC51D780479005D0143 /* ArcView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		A4F2ECBB1D76E601005D0143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F2ECC11D7716F2005D0143 /* ArcImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcImageView.h; sourceTree = "<group>"; };
 		A4F2ECC21D7716F2005D0143 /* ArcImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcImageView.m; sourceTree = "<group>"; };
+		A4F2ECC41D780479005D0143 /* ArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcView.h; sourceTree = "<group>"; };
+		A4F2ECC51D780479005D0143 /* ArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				A4F2ECB11D76E601005D0143 /* ViewController.m */,
 				A4F2ECC11D7716F2005D0143 /* ArcImageView.h */,
 				A4F2ECC21D7716F2005D0143 /* ArcImageView.m */,
+				A4F2ECC41D780479005D0143 /* ArcView.h */,
+				A4F2ECC51D780479005D0143 /* ArcView.m */,
 				A4F2ECB31D76E601005D0143 /* Main.storyboard */,
 				A4F2ECB61D76E601005D0143 /* Assets.xcassets */,
 				A4F2ECB81D76E601005D0143 /* LaunchScreen.storyboard */,
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4F2ECB21D76E601005D0143 /* ViewController.m in Sources */,
+				A4F2ECC61D780479005D0143 /* ArcView.m in Sources */,
 				A4F2ECC31D7716F2005D0143 /* ArcImageView.m in Sources */,
 				A4F2ECAF1D76E601005D0143 /* AppDelegate.m in Sources */,
 				A4F2ECAC1D76E601005D0143 /* main.m in Sources */,

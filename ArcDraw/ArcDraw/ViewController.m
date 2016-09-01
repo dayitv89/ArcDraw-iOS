@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "ArcImageView.h"
+#import "ArcView.h"
 
 @interface ViewController () {
-    __weak IBOutlet ArcImageView *imgViewFilled;
+    __weak IBOutlet ArcView *arcView;
     NSTimer *timer;
 }
 @end
@@ -23,7 +23,7 @@
 }
 
 - (void)performAnimation {
-    timer = [NSTimer scheduledTimerWithTimeInterval:2.0
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                              target:self
                                            selector:@selector(showScore)
                                            userInfo:nil
@@ -34,11 +34,10 @@
     static int i = 0;
     if (i > 12) {
        [timer invalidate];
-        [imgViewFilled setImage:nil];
         return;
     }
     CGFloat filledAngle = 30*i++;
-    [imgViewFilled cropStartAngle:0 endAngle:filledAngle];
+    [arcView cropStartAngle:0 endAngle:filledAngle];
 }
 
 @end

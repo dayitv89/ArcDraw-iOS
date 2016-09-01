@@ -35,8 +35,7 @@
     }
 }
 
-- (void)cropStartAngle:(CGFloat)start
-              endAngle:(CGFloat)end {
+- (void)cropStartAngle:(CGFloat)start endAngle:(CGFloat)end {
     [self setupView];
 
     CGFloat radius = self.frame.size.width/2;
@@ -49,18 +48,10 @@
                    radius:radius
                startAngle:starttime
                  endAngle:endtime
-                clockwise:YES];
+                clockwise:self.clockWise];
 
     self.maskLayer.path = [arc CGPath];
     self.circleLayer.path = [arc CGPath];
-
-    //-- animation is not working
-//    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-//    pathAnimation.duration = 1.0;
-//    pathAnimation.fromValue = @(0.0f);
-//    pathAnimation.toValue = @(1.0f);
-//    [pathAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
-//    [self.layer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
 }
 
 @end
