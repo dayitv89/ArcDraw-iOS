@@ -24,7 +24,7 @@
 }
 
 - (void)performAnimation {
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+    timer = [NSTimer scheduledTimerWithTimeInterval:2.0
                                              target:self
                                            selector:@selector(showScore)
                                            userInfo:nil
@@ -38,7 +38,7 @@
         return;
     }
     CGFloat filledAngle = 30*i++;
-    [arcView cropStartAngle:0+225 endAngle:filledAngle+225];
+    [arcView cropStartAngle:0+225 endAngle:((int)filledAngle)%271+225];
 }
 
 - (void)polarAnimation:(UIView*)view {
