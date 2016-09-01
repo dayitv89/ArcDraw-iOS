@@ -8,10 +8,7 @@
 
 #import "ArcImageView.h"
 
-@interface ArcImageView () {
-    CGFloat start, end, endFinal;
-    NSTimer *timer;
-}
+@interface ArcImageView ()
 @property (nonatomic, weak) CAShapeLayer *maskLayer;
 @property (nonatomic, weak) CAShapeLayer *circleLayer;
 @end
@@ -38,22 +35,8 @@
     }
 }
 
-- (void)cropStartAngle:(CGFloat)start1 endAngle:(CGFloat)end1 {
+- (void)cropStartAngle:(CGFloat)start endAngle:(CGFloat)end {
     [self setupView];
-    start = start1;
-    end = start1;
-    endFinal = end1;
-    
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0/endFinal
-                                             target:self
-                                           selector:@selector(crop)
-                                           userInfo:nil
-                                            repeats:YES];
-}
-
-- (void)crop {
-    end++;
-    
     CGFloat radius = self.frame.size.width/2;
     CGFloat starttime = ((M_PI * (start + 270))/ 180);
     CGFloat endtime =  ((M_PI * (end + 270))/ 180);
@@ -68,10 +51,6 @@
     
     self.maskLayer.path = [arc CGPath];
     self.circleLayer.path = [arc CGPath];
-    
-    if (end == endFinal) {
-        [timer invalidate];
-    }
 }
 
 @end

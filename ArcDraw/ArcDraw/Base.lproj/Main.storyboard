@@ -56,7 +56,7 @@
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NC4-tf-CqC" customClass="ArcView">
                                                 <rect key="frame" x="84" y="86" width="152" height="152"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.69019609689999994" green="0.14901961389999999" blue="0.180392161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NC4-tf-CqC" secondAttribute="height" multiplier="1:1" id="cUP-05-3gx"/>
                                                 </constraints>

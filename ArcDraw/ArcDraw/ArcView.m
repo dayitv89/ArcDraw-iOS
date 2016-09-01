@@ -22,6 +22,8 @@
 
 - (void)setupView {
     if (!self.imgViewFill) {
+        [self layoutIfNeeded];
+
         UIImageView *backImgVw = [[UIImageView alloc] initWithFrame:self.bounds];
         [backImgVw setImage:self.backImage];
         [backImgVw setContentMode:self.contentMode];
@@ -33,12 +35,14 @@
         [fillImgVw setClockWise:self.clockWise];
         [self addSubview:fillImgVw];
         self.imgViewFill = fillImgVw;
+        self.imgViewFill.hidden = YES;
     }
 }
 
 - (void)cropStartAngle:(CGFloat)start endAngle:(CGFloat)end {
     [self setupView];
     [self.imgViewFill cropStartAngle:start endAngle:end];
+    self.imgViewFill.hidden = NO;
 }
 
 @end

@@ -11,7 +11,6 @@
 
 @interface ViewController () {
     __weak IBOutlet ArcView *arcView;
-    NSTimer *timer;
 }
 @end
 
@@ -20,25 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self polarAnimation:arcView];
-    [self performAnimation];
-}
-
-- (void)performAnimation {
-    timer = [NSTimer scheduledTimerWithTimeInterval:2.0
-                                             target:self
-                                           selector:@selector(showScore)
-                                           userInfo:nil
-                                            repeats:YES];
+    [self showScore];
 }
 
 - (void)showScore {
-    static int i = 0;
-    if (i > 12) {
-       [timer invalidate];
-        return;
-    }
-    CGFloat filledAngle = 30*i++;
-    [arcView cropStartAngle:0 endAngle:filledAngle];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [arcView cropStartAngle:0 endAngle:225];
+    });
 }
 
 - (void)polarAnimation:(UIView*)view {
