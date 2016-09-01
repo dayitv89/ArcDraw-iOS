@@ -38,7 +38,7 @@
         return;
     }
     CGFloat filledAngle = 30*i++;
-    [arcView cropStartAngle:0+225 endAngle:((int)filledAngle)%271+225];
+    [arcView cropStartAngle:0 endAngle:filledAngle];
 }
 
 - (void)polarAnimation:(UIView*)view {
