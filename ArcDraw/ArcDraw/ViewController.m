@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self polarAnimation:arcView];
     [self performAnimation];
 }
 
@@ -37,7 +38,21 @@
         return;
     }
     CGFloat filledAngle = 30*i++;
-    [arcView cropStartAngle:0 endAngle:filledAngle];
+    [arcView cropStartAngle:0+225 endAngle:filledAngle+225];
+}
+
+- (void)polarAnimation:(UIView*)view {
+    UIInterpolatingMotionEffect *verticalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+    verticalMotionEffect.minimumRelativeValue = @(-30);
+    verticalMotionEffect.maximumRelativeValue = @(30);
+    
+    UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+    horizontalMotionEffect.minimumRelativeValue = @(-30);
+    horizontalMotionEffect.maximumRelativeValue = @(30);
+    
+    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
+    group.motionEffects = @[horizontalMotionEffect, verticalMotionEffect];
+    [view addMotionEffect:group];
 }
 
 @end

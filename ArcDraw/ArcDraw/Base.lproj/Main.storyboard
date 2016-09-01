@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="navigation bar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCv-52-Sw3">
@@ -152,13 +152,13 @@
                                                 <exclude reference="ARU-Bv-SDo"/>
                                                 <exclude reference="VMP-PA-ZPj"/>
                                                 <exclude reference="mvP-vt-L0e"/>
+                                                <exclude reference="DCr-Bd-If5"/>
+                                                <exclude reference="NrN-HR-9Rn"/>
+                                                <exclude reference="US5-EO-REg"/>
                                                 <exclude reference="6bJ-fI-CLL"/>
                                                 <exclude reference="6vW-Cw-8bq"/>
                                                 <exclude reference="Hu2-iJ-tBr"/>
                                                 <exclude reference="hfp-dJ-d7G"/>
-                                                <exclude reference="DCr-Bd-If5"/>
-                                                <exclude reference="NrN-HR-9Rn"/>
-                                                <exclude reference="US5-EO-REg"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -172,13 +172,13 @@
                                                 <include reference="ARU-Bv-SDo"/>
                                                 <include reference="VMP-PA-ZPj"/>
                                                 <include reference="mvP-vt-L0e"/>
+                                                <include reference="DCr-Bd-If5"/>
+                                                <include reference="NrN-HR-9Rn"/>
+                                                <include reference="US5-EO-REg"/>
                                                 <include reference="6bJ-fI-CLL"/>
                                                 <include reference="6vW-Cw-8bq"/>
                                                 <include reference="Hu2-iJ-tBr"/>
                                                 <include reference="hfp-dJ-d7G"/>
-                                                <include reference="DCr-Bd-If5"/>
-                                                <include reference="NrN-HR-9Rn"/>
-                                                <include reference="US5-EO-REg"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -233,16 +233,16 @@
                                 <exclude reference="Ggx-zh-eP0"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="udu-gG-woS"/>
                                 <exclude reference="Ls7-fl-mdH"/>
                                 <exclude reference="QPi-BA-IZ9"/>
                                 <exclude reference="hKO-ZT-PRG"/>
-                                <exclude reference="3d6-hQ-D0i"/>
-                                <exclude reference="QcW-bc-Iyq"/>
-                                <exclude reference="q5z-DZ-M6s"/>
                                 <exclude reference="GSA-eN-4lh"/>
                                 <exclude reference="YQX-xQ-zk7"/>
                                 <exclude reference="sEh-ni-VO1"/>
-                                <exclude reference="udu-gG-woS"/>
+                                <exclude reference="3d6-hQ-D0i"/>
+                                <exclude reference="QcW-bc-Iyq"/>
+                                <exclude reference="q5z-DZ-M6s"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -252,16 +252,16 @@
                                 <include reference="Ggx-zh-eP0"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="udu-gG-woS"/>
                                 <include reference="Ls7-fl-mdH"/>
                                 <include reference="QPi-BA-IZ9"/>
                                 <include reference="hKO-ZT-PRG"/>
-                                <include reference="3d6-hQ-D0i"/>
-                                <include reference="QcW-bc-Iyq"/>
-                                <include reference="q5z-DZ-M6s"/>
                                 <include reference="GSA-eN-4lh"/>
                                 <include reference="YQX-xQ-zk7"/>
                                 <include reference="sEh-ni-VO1"/>
-                                <include reference="udu-gG-woS"/>
+                                <include reference="3d6-hQ-D0i"/>
+                                <include reference="QcW-bc-Iyq"/>
+                                <include reference="q5z-DZ-M6s"/>
                             </mask>
                         </variation>
                     </view>
